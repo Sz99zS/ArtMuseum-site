@@ -1,0 +1,72 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 127px;
+    background: linear-gradient(90deg, #343333 16.73%, #484848 58.63%, #282828 98.63%);
+}
+
+.ImageMuseum {
+    width: 206px;
+    height: 63px;
+    margin-left: 10%;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-right: 10%;
+
+}
+
+.HomeButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.BookmarkButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.TextHeader {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+}
+.HomeButton,
+.BookmarkButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .HomeButton{
+        display: none;
+ 
+    }
+    .BookmarkButton{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .HomeButton{
+        display: none;
+ 
+    }
+    .BookmarkButton{
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.text h1 {
+    display: flex;
+    flex-direction: column;
+    /* строки друг под другом */
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+/* Верхняя строка */
+.top {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #393939;
+}
+
+/* Нижняя строка */
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    color: #f17900;
+}
+
+/* Иконка */
+.icon {
+    width: 64px;
+    /* чуть меньше текста → выглядит как в UI */
+    height: 64px;
+    object-fit: contain;
+    transform: translateY(2px);
+    /* микро-выравнивание */
+}
+
+.FavoritesListHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FavoritesListHeader p:nth-of-type(1) {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #e0a449;
+    padding: 0px;
+    margin: 3px 0px 0px 0px;
+}
+
+.FavoritesListHeader p:nth-of-type(2) {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    color: #393939;
+    padding: 4px 0px 4px 0px;
+    margin: 0px 0px 40px 0px;
+}
+
+.FavoritesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  gap: 16px;
+
+  justify-content: center;
+  margin: 0 auto 120px;
+  row-gap: 16px;
+}
+
+/*
+.Row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+*/

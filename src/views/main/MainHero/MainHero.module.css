@@ -1,0 +1,64 @@
+.Block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainHeroTitle {
+    width: 684px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #393939;
+}
+
+.MainHeroTextArt {
+    color: #f17900;
+}
+
+
+.MainHeroSearchTextBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 16px;
+    width: 762px;
+    background: rgba(57, 57, 57, 0.05);
+}
+
+.MainHeroTextBox {
+    flex-grow: 1;
+    display: flex;
+}
+
+.MainHeroTextBox input::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.MainHeroTextBox input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: start;
+    align-items: center;
+    color: rgba(57, 57, 57, 0.5);
+}
+
+@media (max-width: 1440px) {
+    .MainHeroSearchTextBlock {
+        width: 90%;
+    }
+
+    .MainHeroTitle {
+        width: 70%;
+    }
+}

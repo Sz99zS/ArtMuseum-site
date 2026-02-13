@@ -1,0 +1,72 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 127px;
+    background: linear-gradient(90deg, #343333 16.73%, #484848 58.63%, #282828 98.63%);
+
+    padding: 0 320px;
+    box-sizing: border-box; /* Чтобы паддинг не увеличивал общую ширину */
+}
+
+.LinkHome {
+    display: flex;
+    align-items: center;
+}
+
+.LinkFavorites {
+    display: flex;
+    align-items: center;
+}
+
+.LinkWrapper {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.ImageMuseum {
+    width: 206px;
+    height: 63px;
+    cursor: pointer;
+}
+
+.Button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.ImageBookmark {
+    width: 24px;
+    height: 24px;
+}
+
+.TextHeader {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+@media (max-width: 1000px) {
+    .Button p {
+        display: none;
+    }
+    .Button img {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .Header {
+        justify-content: center;
+        padding: 0px 10% 0px 10%;
+    }
+}

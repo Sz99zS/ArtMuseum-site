@@ -1,0 +1,67 @@
+.ComponentOtherWorks {
+    margin-bottom: 120px;
+}
+
+.Textbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 40px;
+
+}
+
+.Text1 p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #e0a449;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.Text2 p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    color: #393939;
+    margin: 0px;
+    
+}
+
+/*Gallery*/
+
+.Library {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.Row {
+    display: flex;
+    gap: 16px;
+}
+
+/* .Library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    gap: 20px;
+
+    justify-content: center;
+    margin: 0 auto 120px;
+    row-gap: 16px;
+} */
+@media (max-width: 1290px) {
+    .Library {
+        flex-wrap: wrap;
+        row-gap: 90px;
+    }
+
+    .Row {
+        flex-wrap: wrap;
+        row-gap: 90px;
+    }
+}
